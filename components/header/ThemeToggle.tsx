@@ -9,7 +9,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className={`w-10 h-10 p-2 flex items-center justify-center rounded-md shadow-md ${theme === "light" ? "bg-gray-50/80" : "bg-gray-50/20"} `}
+      className={`w-10 h-10 p-2 flex items-center justify-center rounded-md shadow-md cursor-pointer ${theme === "light" ? "bg-gray-50/80" : "bg-gray-50/20"} `}
     >
       {theme === "light" ? <Image src={iconMoon} alt="icon-moon" className="w-5" /> : <Image src={iconSun} alt="icon-sun" className="w-5 h-5" />}
     </button>

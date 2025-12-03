@@ -9,6 +9,7 @@ import iconClose from "@/public/icon-close.svg";
 import iconHamburger from "@/public/icon-hamburger.svg";
 import iconFacebook from "@/public/icon-facebook.svg";
 import iconTwitter from "@/public/icon-twitter.svg";
+import HamburguerIcon from '../icons/HamburgueIcon';
 
 
 function Header() {
@@ -35,11 +36,11 @@ function Header() {
       </div>
       {/* NAV desktop */}
       <nav className="lg:flex gap-9 hidden text-foreground flex-row items-center uppercase tracking-widest text-[.8rem]">
-        <Link href="/features" className="hover:text-blue-600">Features</Link>
-        <Link href="/pricing" className="hover:text-blue-600">Pricing</Link>
-        <Link href="/faq" className="hover:text-blue-600">FAQ</Link>
-        <Link href="/contact" className="hover:text-blue-600">Contact</Link>
-        <button className="w-25 h-10 bg-red-400 rounded-md text-white uppercase tracking-widest text-[.8rem] shadow-md">
+        <Link href="/features" className="hover:text-red-400">Features</Link>
+        <Link href="/pricing" className="hover:text-red-400">Pricing</Link>
+        <Link href="/faq" className="hover:text-red-400">FAQ</Link>
+        <Link href="/contact" className="hover:text-red-400">Contact</Link>
+        <button className="w-25 h-10 bg-red-400 rounded-md text-white uppercase tracking-widest text-[.8rem] shadow-md hover:bg-gray-50 hover:text-red-400 hover:border-2 hover:border-red-400 hover:font-medium cursor-pointer">
           Login
         </button>
         <ThemeToggle />
@@ -53,17 +54,15 @@ function Header() {
         type="button"
         onClick={handleSideBar}
       >
-        <Image
-          src={iconHamburger}
-          className="icon-hamburger w-5 h-auto"
-          alt="icon-hamburger"
-        />
+        <HamburguerIcon 
+        className={theme === "dark" ? `iconHamburguer text-gray-50` : "iconHamburguer text-gray-950"} 
+        alt="icon-hamburger" />
 
       </button>
 
       {/* SIDEBAR mobile */}
       <nav
-       id="navbar-hamburger"
+        id="navbar-hamburger"
         className={`nav-mobile lg:hidden fixed h-full w-screen top-0 left-0 z-50
       ${isOpen
             ? "translate-x-0"
@@ -85,7 +84,7 @@ function Header() {
               />
             </div>
             {/* icon-close*/}
-                <Image src={iconClose}
+            <Image src={iconClose}
               alt="icon-close"
               className={isOpen ? `icon-close h-3 w-auto text-foreground` : ""}
               onClick={handleSideBar} />
@@ -100,8 +99,8 @@ function Header() {
             </button>
           </ul>
           <div className="icons-sidebar flex w-full h-full gap-10 items-center justify-center">
-              <Image src={iconFacebook} alt="icon" className="w h-auto" />
-              <Image src={iconTwitter} alt="icon" className="w h-auto" />
+            <Image src={iconFacebook} alt="icon" className="w h-auto" />
+            <Image src={iconTwitter} alt="icon" className="w h-auto" />
           </div>
         </div>
       </nav>

@@ -26,7 +26,7 @@ const TabCard: React.FC<TabCardProps> = ({image, title, text}) => {
 
         <div className="button-tab-container gap-5 justify-center lg:justify-start lg:block hidden">
           <button type="button" name="Chrome" className="hero-button bg-blue-600 rounded-md shadow-md font-medium text-grey-50 lg:text-[.9rem] text-[13px]
-          lg:w-30 w-25 p-3  
+          lg:w-30 w-25 p-3 h-12 hover:bg-gray-50 hover:border-2 hover:border-blue-600 hover:text-blue-600 cursor-pointer 
           ">More Info</button>
 
         </div>

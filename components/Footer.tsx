@@ -1,11 +1,10 @@
 "use client";
-import Image from 'next/image';
 import Link from "next/link";
 import BookmarkIcon from '@/components/icons/BookMarkIcon';
 import ThemeToggle from "@/components/header/ThemeToggle";
 import NewsLetterForm from "./NewsLetterForm";
-import iconFacebook from "../public/icon-facebook.svg";
-import iconTwitter from "../public/icon-twitter.svg";
+import TwitterIcon from './icons/TwitterIcon';
+import FacebookIcon from './icons/FacebookIcon';
 
 const Footer = () => {
 
@@ -32,13 +31,14 @@ const Footer = () => {
           textColor={whiteColor}
           circleColor={blueColor600}
           markColor={whiteColor}
+          alt="logo"
         />
         <Link href="/features" className="hover:text-red-400">Features</Link>
         <Link href="/pricing" className="hover:text-red-400">Pricing</Link>
         <Link href="/contact" className="hover:text-red-400">Contact</Link>
         <div className="icons-footer flex gap-10 items-center justify-center">
-          <Image src={iconFacebook} alt="icon" className="w h-auto" />
-          <Image src={iconTwitter} alt="icon" className="w h-auto" />
+          <FacebookIcon className=" hover:text-red-400"/>
+          <TwitterIcon className=" hover:text-red-400"/>
           <ThemeToggle />
         </div>
       </nav>

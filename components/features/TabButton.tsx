@@ -10,7 +10,7 @@ function TabButton({ action, children, isActive }: TabButtonProps) {
     lg:w-60 w-80 h-15 border-b border-gray-200 
     flex justify-center items-center relative
     lg:first:border-0 tracking-wider
-    first:border-t first:border-gray-200
+    first:border-t first:border-gray-200 hover:text-red-400 cursor-pointer
   `;
 
   const textClasses = isActive 

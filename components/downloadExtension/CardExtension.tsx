@@ -22,7 +22,7 @@ const CardExtension: React.FC<CardExtensionProps> = ({ image, name, version }) =
 
 
       <Image src={dottedLine} className="dotted-image flex mb-7 w-full" loading="eager" alt="dotted-image"  height={10}></Image>
-      <button className="hero-button tracking-wider rounded-md shadow-md font-medium text-gray-50 bg-blue-600 text-[.9rem] w-60 p-3">
+      <button className="hero-button tracking-wider rounded-md shadow-md font-medium text-gray-50 bg-blue-600 text-[.9rem] w-60 p-3 hover:bg-gray-50 hover:border-2 hover:border-blue-600 hover:text-blue-600 cursor-pointer">
         Add & Install Extension
       </button>
     </div>

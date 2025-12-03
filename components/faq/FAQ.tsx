@@ -38,9 +38,9 @@ const Faq = () => {
 
   return (
     <section
-      className="grid lg:grid-cols-[auto_550px_auto] lg:grid-rows-[230px_600px_100px] grid-cols-[fr] w-screen p-9">
+      className="faq-section grid lg:grid-cols-[auto_550px_auto] lg:grid-rows-[230px_680px] grid-cols-1 grid-rows-[230px_680px] w-screen p-9 justify-items-center">
       <div
-        className="col-start-2 row-1 flex flex-col justify-end items-center text-center h-60">
+        className="col-start-2 row-start-1 flex flex-col justify-end items-center text-center h-60">
         <h1
           className="font-medium lg:text-[2rem] text-[1.5rem] lg:mb-9 mb-5 leading-8"
         >Frequently Asked Questions</h1>
@@ -51,7 +51,7 @@ const Faq = () => {
         >Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
       </div>
       <Suspense fallback={<h1>🌀 Loading...</h1>}>
-        <nav className="col-start-2 row-2 pt-14">
+        <nav className="col-start-2 row-start-2 pt-14">
           <ul className="h-auto">
             {infoFaq.map(({ key, question, answer }) => {
               const isOpen = faqState === key;
@@ -87,12 +87,15 @@ const Faq = () => {
               );
             })}
           </ul>
-        </nav>
-          <div className="lg:col-start-2 flex items-center h-40 justify-center">
+          <div className="button flex flex-row  w-full items-center justify-center mt-15">
             <button type="button" name="Chrome" className="faq-button bg-blue-600 rounded-md shadow-md font-medium text-grey-50 lg:text-[.9rem] text-[13px]
-          w-30  p-3  py-4
+            w-30  p-3  h-12 hover:bg-gray-50 hover:border-2   hover:border-blue-600 hover:text-blue-600   cursor-pointer 
           ">More Info</button>
           </div>
+        </nav>
+
+
+
       </Suspense>
     </section>
   )
