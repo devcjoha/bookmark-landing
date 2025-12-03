@@ -4,7 +4,7 @@ self.__BUILD_MANIFEST = {
     "beforeFiles": [
       {
         "source": "/bookmark-landing//_next/:path+",
-        "destination": "/bookmark-landing/_next/:path+"
+        "destination": "/_next/:path+"
       }
     ],
     "fallback": []
