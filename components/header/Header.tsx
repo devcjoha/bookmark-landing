@@ -1,9 +1,16 @@
 "use client";
-import { useTheme } from "../context/ThemeContext";
-import ThemeToggle from "@/components/ThemeToggle";
-import { useState } from "react";
-import BookmarkIcon from '@/components/icons/BookMarkIcon';
+import Image from 'next/image';
 import Link from "next/link";
+import { useState } from "react";
+import { useTheme } from "@/context/ThemeContext";
+import ThemeToggle from "@/components/header/ThemeToggle";
+import BookmarkIcon from '@/components/icons/BookMarkIcon';
+import iconClose from "@/public/icon-close.svg";
+import iconHamburger from "@/public/icon-hamburger.svg";
+import iconFacebook from "@/public/icon-facebook.svg";
+import iconTwitter from "@/public/icon-twitter.svg";
+
+
 function Header() {
   const { theme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +24,7 @@ function Header() {
   const whiteColor = "#f7f7f7";
 
   return (
-    <header className="flex items-center justify-between p-6 shadow bg-background text-foreground">
+    <header className="flex items-center justify-between bg-background text-foreground p-10 mb-10 lg:pl-25 lg:pr-25">
       <div className="flex items-center gap-2">
         <BookmarkIcon
           className={!isOpen ? `bookmark-logo h-6 w-36 text-foreground` : "bookmark-logo hidden"}
@@ -42,12 +49,12 @@ function Header() {
         data-collapse-toggle="navbar-hamburger"
         aria-controls="navbar-hamburger"
         aria-expanded="false"
-        className={isOpen ? "button-hamburger hidden" : `button-hamburger lg:hidden flex items-center justify-center p-7 `}
+        className={isOpen ? "button-hamburger hidden" : `button-hamburger lg:hidden flex items-center justify-center`}
         type="button"
         onClick={handleSideBar}
       >
-        <img
-          src={"bookmark-landing/icon-hamburger.svg"}
+        <Image
+          src={iconHamburger}
           className="icon-hamburger w-5 h-auto"
           alt="icon-hamburger"
         />
@@ -57,12 +64,12 @@ function Header() {
       {/* SIDEBAR mobile */}
       <nav
        id="navbar-hamburger"
-        className={`nav-mobile lg:hidden fixed h-full w-screen top-0 left-0
+        className={`nav-mobile lg:hidden fixed h-full w-screen top-0 left-0 z-50
       ${isOpen
             ? "translate-x-0"
-            : "translate-x-full opacity-0 pointer-events-none"
+            : "translate-x-full opacity-0 pointer-events-none "
           }
-        transition-all duration-300 ease-in-out`}
+        transition-all duration-200 ease-in-out`}
       >
         <div
           className="navbar-container w-screen h-full flex flex-col items-center justifz-center gap-6 p-8 shadow-xl z-50  bg-Sidebar/93  text-white uppercase"
@@ -78,11 +85,12 @@ function Header() {
               />
             </div>
             {/* icon-close*/}
-            <img src="bookmark-landing/icon-close.svg"
+                <Image src={iconClose}
               alt="icon-close"
               className={isOpen ? `icon-close h-3 w-auto text-foreground` : ""}
               onClick={handleSideBar} />
           </div>
+          <ThemeToggle />
           <ul className="font-light h-full w-full items-center justify-center text-center text-[1.2rem] tracking-widest">
             <li className="li-menu-sidebar border-b border-t border-grey-50/20 pt-5 pb-5 mt-5"><Link href="/features" onClick={() => setIsOpen(false)}>Features</Link></li>
             <li className="li-menu-sidebar border-b border-grey-50/20 pt-5 pb-5"><Link href="/pricing" onClick={() => setIsOpen(false)}>Pricing</Link></li>
@@ -92,8 +100,8 @@ function Header() {
             </button>
           </ul>
           <div className="icons-sidebar flex w-full h-full gap-10 items-center justify-center">
-            <img src={"bookmark-landing/icon-facebook.svg"} alt="icon" className="w h-auto" />
-            <img src={"bookmark-landing/icon-twitter.svg"} alt="icon" className="w h-auto" />
+              <Image src={iconFacebook} alt="icon" className="w h-auto" />
+              <Image src={iconTwitter} alt="icon" className="w h-auto" />
           </div>
         </div>
       </nav>

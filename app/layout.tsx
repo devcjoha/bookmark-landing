@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "../context/ThemeContext";
 import "./globals.css";
 import { Rubik } from "next/font/google";
-import Header from "@/components/Header";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -21,12 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+        <link rel="icon" href="/favicon.png" type="image/png" />
       <body
         className={`${rubik.variable} ${rubik.variable} antialiased`}
       >
         <ThemeProvider>
-
-          <Header />
           <main>{children}</main>
         </ThemeProvider>
 

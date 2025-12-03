@@ -1,11 +1,12 @@
 import type { NextConfig } from "next";
 
-
 const nextConfig: NextConfig = {
   /* config options here */
-    basePath: "/bookmark-landing", 
-    assetPrefix: "/bookmark-landing/",
-    reactStrictMode: true,
+  output: "export",
+  basePath: "/bookmark-landing",
+  assetPrefix: "/bookmark-landing/",
+  reactStrictMode: true,
+  allowedDevOrigins: ['local-origin.dev', '*.local-origin.dev'],
 };
 
 export default nextConfig;
