@@ -32,17 +32,15 @@ Users should be able to:
 
 ### Screenshot
 <p align="center">
-  <img src="./public/Desktop-form.jpg" width="500" alt="vista desktopform" />
+  <img src="./public/solution2.jpeg" width="200" alt="vista desktopticket"align="top" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./public/Desktop-ticket.jpg" width="300" alt="vista desktopticket" />
+  <img src="./public/solution3.jpeg" width="200" alt="vista desktop" align="top"/>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./public/Desktop-form-errors.jpg" width="300" alt="vista desktop" />
+  <img src="./public/solution1.jpeg" width="200" alt="vista desktopform"align="top" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./public/Desktop-form-states.jpg" width="600" alt="vista desktop" />
+  <img src="./public/solution4.jpeg" width="100" alt="vista desktop" align="top"/>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./public/mobile-form.jpg" width="300" alt="mobile form" />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./public/Tablet-ticket.jpg" width="300" alt="tabletTicket" />
+
 </p>
 
 ## Author
@@ -63,11 +61,11 @@ Users should be able to:
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="./public/tailwind.svg" alt="tailwind" width="50px" />
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="./public/next.svg" alt="next" width="50px" />
+<img src="./public/nextjs.svg" alt="next" width="50px" />
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="./public/react-router.svg" alt="react-routerd" width="50px" />
+<img src="./public/typescript.svg" alt="react-routerd" width="50px" />
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="./public/vercel-iconb.svg" alt="vercel" width="50px" />
+<img src="./public/nodejs.svg" alt="vercel" width="50px" />
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="./public/github.svg" alt="githubPages" width="55px" />
 </p>

@@ -20,7 +20,7 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@/icons/*": ["./components/icons/*"],
+      // "@/icons/*": ["./components/icons/*"],
     }
   },
   "include": [
