@@ -70,25 +70,28 @@ Users should be able to:
 <img src="./public/github.svg" alt="githubPages" width="55px" />
 </p>
 
-- React (component-based architecture).
-
-- Vite (development and packaging).
-
-- Functional components and hooks (useState).
-
-- Tailwind custom properties.
-
-- Responsive design.
-
-- Error validation for each input, as needed.
+### Built with
+- **Next.js 15** (with Turbopack for faster dev builds)
+- **React** (component-based architecture)
+- **TypeScript** (type safety and maintainability)
+- **TailwindCSS** (utility-first styling with custom properties)
+- **GitHub Pages** (static deploy with `next export`)
+- **Functional components and hooks** (`useState`, `useEffect`, `useContext`)
+- **Responsive design** (grid + flexbox patterns)
+- **Form validation** (error handling for newsletter input)
 
 ### What I learned
-
-
+- How to configure `basePath` and `assetPrefix` for GitHub Pages deploys.
+- The importance of `.env.local` for private/local configuration (`NEXT_ALLOWED_ORIGIN`).
+- Using **grid layout** to overlay background shapes and images cleanly.
+- Defensive patterns for favicon overwrite and static asset resolution.
+- How to structure context providers for theme toggling and global state.
 
 ### Continued development
-
-
+- Add animations for hero section and tab transitions.
+- Improve accessibility (ARIA attributes for FAQ accordion and form validation).
+- Explore API-driven content instead of mock JSON for scalability.
+- Document deployment workflow in detail for future portfolio projects.
 
 ## Author
 
