@@ -25,7 +25,8 @@ const Footer = () => {
         <NewsLetterForm />
 
       </div>
-      <nav className="lg:col-span-3 col-1 row-3 flex gap-9 lg:flex-row flex-col items-center justify-center uppercase tracking-widest text-[1rem] bg-blue-950 text-gray-50">
+      <nav className="lg:col-span-3 col-1 row-3 flex gap-9 lg:flex-row flex-col items-center justify-center uppercase tracking-widest text-[1rem] bg-blue-950 text-gray-50 ">
+        <div className="lg:w-1/2 flex gap-9 lg:flex-row flex-col items-center">
         <BookmarkIcon
           className={`bookmark-logo h-6 w-36 text-foreground`}
           textColor={whiteColor}
@@ -33,9 +34,10 @@ const Footer = () => {
           markColor={whiteColor}
           alt="logo"
         />
-        <Link href="/features" className="hover:text-red-400">Features</Link>
-        <Link href="/pricing" className="hover:text-red-400">Pricing</Link>
-        <Link href="/contact" className="hover:text-red-400">Contact</Link>
+        <Link href="/" className="hover:text-red-400">Features</Link>
+        <Link href="/" className="hover:text-red-400">Pricing</Link>
+        <Link href="/" className="hover:text-red-400">Contact</Link>
+        </div>
         <div className="icons-footer flex gap-10 items-center justify-center">
           <FacebookIcon className=" hover:text-red-400"/>
           <TwitterIcon className=" hover:text-red-400"/>

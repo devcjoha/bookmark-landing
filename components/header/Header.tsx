@@ -36,10 +36,10 @@ function Header() {
       </div>
       {/* NAV desktop */}
       <nav className="lg:flex gap-9 hidden text-foreground flex-row items-center uppercase tracking-widest text-[.8rem]">
-        <Link href="/features" className="hover:text-red-400">Features</Link>
-        <Link href="/pricing" className="hover:text-red-400">Pricing</Link>
-        <Link href="/faq" className="hover:text-red-400">FAQ</Link>
-        <Link href="/contact" className="hover:text-red-400">Contact</Link>
+        <Link href="/" className="hover:text-red-400">Features</Link>
+        <Link href="/" className="hover:text-red-400">Pricing</Link>
+        <Link href="/"></Link>
+        <Link href="/" className="hover:text-red-400">Contact</Link>
         <button className="w-25 h-10 bg-red-400 rounded-md text-white uppercase tracking-widest text-[.8rem] shadow-md hover:bg-gray-50 hover:text-red-400 hover:border-2 hover:border-red-400 hover:font-medium cursor-pointer">
           Login
         </button>
@@ -91,9 +91,9 @@ function Header() {
           </div>
           <ThemeToggle />
           <ul className="font-light h-full w-full items-center justify-center text-center text-[1.2rem] tracking-widest">
-            <li className="li-menu-sidebar border-b border-t border-grey-50/20 pt-5 pb-5 mt-5"><Link href="/features" onClick={() => setIsOpen(false)}>Features</Link></li>
-            <li className="li-menu-sidebar border-b border-grey-50/20 pt-5 pb-5"><Link href="/pricing" onClick={() => setIsOpen(false)}>Pricing</Link></li>
-            <li className="li-menu-sidebar border-b border-grey-50/20 pt-5 pb-5"><Link href="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
+            <li className="li-menu-sidebar border-b border-t border-grey-50/20 pt-5 pb-5 mt-5"><Link href="/" onClick={() => setIsOpen(false)}>Features</Link></li>
+            <li className="li-menu-sidebar border-b border-grey-50/20 pt-5 pb-5"><Link href="/" onClick={() => setIsOpen(false)}>Pricing</Link></li>
+            <li className="li-menu-sidebar border-b border-grey-50/20 pt-5 pb-5"><Link href="/" onClick={() => setIsOpen(false)}>Contact</Link></li>
             <button className="w-full h-10 rounded-md text-white uppercase tracking-widest text-[1.4rem] font-normal border-2 border-grey-50 mt-6">
               Login
             </button>
